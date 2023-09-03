@@ -1,0 +1,23 @@
+.category {
+  height: 50px;
+  align-items: center;
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+ul a {
+  text-decoration: none;
+  color: rgb(84, 82, 84);
+  margin-top: 10px;
+  font-weight: 800;
+}

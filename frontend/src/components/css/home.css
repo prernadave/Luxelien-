@@ -1,0 +1,246 @@
+
+
+.content {
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content {
+  width: 90%;
+  margin: auto;
+}
+
+.bottom-sec {
+  margin-bottom: 30px;
+  /* border: 1px solid red; */
+}
+
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Add some gap between the images */
+}
+
+.img-1,
+.img-2
+ {
+  width: 100%;
+  max-width: 300px; /* Adjust the maximum width as needed */
+  height: auto;
+}
+
+
+.img-3 {
+  height: 450px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.top-sec {
+  width: 100%;
+  text-align: center; /* Center the text */
+}
+
+.dresses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Add some gap between the dresses */
+}
+
+@keyframes imageZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to your image */
+.dress-img {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+
+.dress-img img {
+  transition: transform 0.3s ease; 
+}
+
+
+.dress-img:hover img {
+  animation: imageZoom 1s ease infinite; 
+}
+
+.dress-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.men-dress {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px; 
+  margin-top: 30px;
+}
+
+.men-dress .men img {
+  max-width: 100%;
+  height: auto;
+}
+
+.men-dress .men {
+  text-align: center;
+  width: 100%;
+}
+/* Slide and zoom animation on hover */
+.men-dress .men img {
+  transform: scale(1);
+  transition: transform 0.3s ease, margin 0.3s ease;
+  margin: 0;
+}
+
+.men-dress .men img:hover {
+  transform: scale(1.1); /* Scale up the image on hover */
+  margin: -10px; /* Create a slight slide effect */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.bottom-sec .first {
+  width: 100%;
+}
+
+.heading-1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* CSS for .shop-category */
+.shop-category {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px; 
+  text-align: center;
+}
+
+/* CSS for individual cards */
+.cards {
+ 
+  transition: transform 0.3s ease-in-out; /* Add a smooth transform transition */
+}
+
+
+
+/* Hover effect on cards */
+.cards:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+}
+
+.cards p {
+
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.ethnic {
+  width: 295px;
+  height: 298px;
+ }
+
+.activewear {
+  width:330px; 
+  height: 298px;
+ 
+}
+
+.casual {
+  width: 295px;
+  height: 298px;
+
+}
+
+
+.western{
+  width:330px; 
+  height: 298px;
+ 
+}
+
+.sports{
+  width: 295px;
+  height: 298px;
+}
+
+.sleepwear{
+  width: 295px;
+  height: 298px;
+}
+
+.blazer{
+  width: 295px;
+  height: 298px;
+}
+
+.purse{
+  width: 295px;
+  height: 298px;
+}
+
+.big-imgs{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.big-imgs img{
+  width: 600px;
+  
+}
+
+.poster{
+  width: 100%;
+}
+.poster img{
+  width: 100%;
+}
