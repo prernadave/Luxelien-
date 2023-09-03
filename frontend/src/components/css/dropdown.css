@@ -1,7 +1,10 @@
 .category {
   height: 50px;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   position: fixed;
+  font-weight: bold;
   top: 50px;
   width: 100%;
   z-index: 999;
@@ -9,15 +12,19 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-ul {
-  display: flex;
-  justify-content: space-around;
-  gap: 10px;
+.category-heading {
+  position: relative;
 }
 
-ul a {
-  text-decoration: none;
-  color: rgb(84, 82, 84);
-  margin-top: 10px;
-  font-weight: 800;
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.category-heading:hover .dropdown {
+  display: block;
 }
